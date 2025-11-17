@@ -1,13 +1,15 @@
 <h1 class="ms-3 mt-3" >Stupid Coaching</h1>
 <%# La vue answer.html.erb affichera la question que tu poses au coach
 <%# et sa réponse. %>
-<div class="p-3 mb-2 border-start">
+<div class="ms-3 mt-3 p-3 mb-2 border-start border-5 border-secondary ps-3">
   <p><strong><%= @question %></strong></p>
   <p>-You</p>
 </div>
 
-<div class="border-start-5 p-3 mb-2 bg-warning-subtle"><p><strong><%= @answer %></strong></p>
+<div class="ms-3 mt-3 border-start border-5 border-secondary ps-3 mb-2 bg-warning-subtle"><p><strong><%= @answer %></strong></p>
   <p>-Your coach</p>
 </div>
 
-<%= link_to "Ask a new question", ask_path %>
+<div class="ms-3 mt-3">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
